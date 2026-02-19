@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Homepage</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: radial-gradient(circle at top,#0f1b2e,#070d18 70%);
+    color:#e6dcc6;
+    font-family:'EB Garamond', serif;
+}
+
+/* NAVBAR(Barra de Navegaçao) */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(10,15,30,.85);
+    backdrop-filter:blur(6px);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid rgba(212,175,55,.3);
+}
+
+.logo{
+    font-family:'Cinzel', serif;
+    font-size:22px;
+    letter-spacing:2px;
+    color:#d4af37;
+}
+
+.menu a{
+    color:#e6dcc6;
+    text-decoration:none;
+    margin-left:25px;
+    position:relative;
+}
+
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:1px;
+    background:#d4af37;
+    transition:.3s;
+}
+
+.menu a:hover::after{ width:100%; }
+
+/* HERO(parte chamativa do site) */
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-family:'Cinzel', serif;
+    font-size:52px;
+    color:#d4af37;
+    letter-spacing:3px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    opacity:.85;
+}
+
+.btn{
+    margin-top:30px;
+    border:1px solid #d4af37;
+    background:transparent;
+    color:#d4af37;
+    cursor:pointer;
+    transition:.3s;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display:inline-block;
+    width:auto;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    display:block;
+    width:fit-content;
+    margin:40px auto;
+
+    
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:#0f1b2e;
+    margin:0 auto;
+}
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:50px;
+    padding:60px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARDS - páginas */
+.card{
+    background:linear-gradient(#f4ecd8,#efe4c9);
+    color:#2d2a26;
+    padding:35px;
+    border-radius:6px;
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
+    position:relative;
+    line-height:1.7;
+    align-items: center;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(0,0,0,.15);
+    border-radius:6px;
+    pointer-events:none;
+}
+
+.card h2{
+    font-family:'Cinzel', serif;
+    color:#3b2f1b;
+    margin-bottom:15px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Site</div>
+    <nav class="menu">
+        <a href="#">Home</a>s
+        <a href="c:\Users\Rafael\Music\Emilly3DS2026\galeria.html">Galeria</a>
+        <a href="#">Acadêmico</a>
+        <a href="#">Contato</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Sobre mim</h2>
+        <p>
+        Me chamo Emilly Antunis, tenho 17 anos e sou estudante de Desenvolvimento de Sistemas na Etec Professora Ilza Nascimento Pintus.
+        Sou artista e leitora nas horas vagas, amo pintar quadros e páginas de sketchbook usando tinta acrílica.
+        Gosto muito de artesanato e de livros dos gêneros mistério, crime, ação, aventura, fantasia e suspense,
+        principalmente Sherlock Holmes e Arsène Lupin.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Meus gostos nerds/geek</h2>
+        <p>
+        Assisto animes, séries e filmes de diversos gêneros.
+        Sou fã de Alice no País das Maravilhas e atualmente acompanho Twisted Wonderland.
+        Curto muito animes shounen e adoro jogos de aventura, luta, RPG e investigação.
+        Também gosto de músicas geek e trilhas sonoras de jogos.
+        </p>
+    </div>
+
+</div>
+
+<a href="galeria.html" class="btn">Ver Projetos</a>
+</body>
+</html> 

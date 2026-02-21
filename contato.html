@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: radial-gradient(circle at top,#0f1b2e,#070d18 70%);
+    color:#e6dcc6;
+    font-family:'EB Garamond', serif;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(10,15,30,.85);
+    backdrop-filter:blur(6px);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid rgba(212,175,55,.3);
+}
+
+.logo{
+    font-family:'Cinzel', serif;
+    font-size:22px;
+    letter-spacing:2px;
+    color:#d4af37;
+}
+
+.menu a{
+    color:#e6dcc6;
+    text-decoration:none;
+    margin-left:25px;
+    position:relative;
+}
+
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:1px;
+    background:#d4af37;
+    transition:.3s;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+/* CONTEÚDO CENTRAL */
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:120px;
+}
+
+.card{
+    background:linear-gradient(#f4ecd8,#efe4c9);
+    color:#2d2a26;
+    padding:45px 55px;
+    border-radius:6px;
+    box-shadow:0 15px 35px rgba(0,0,0,.5);
+    min-width:320px;
+}
+
+.card h2{
+    font-family:'Cinzel', serif;
+    color:#3b2f1b;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.info{
+    line-height:2.2;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Site</div>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="academico.html">Acadêmico</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Contato</h2>
+        <div class="info">
+            <p>Telefone:(12)982294927</p>
+            <p>Email:emillyzinha010@gmail.com</p>
+            <p>LinkedIn:www.linkedin.com/in/emilly-antunis-4973533b2</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

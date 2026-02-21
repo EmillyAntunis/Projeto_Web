@@ -152,6 +152,66 @@ body{
     color:#3b2f1b;
     margin-bottom:15px;
 }
+/* RETRATO */
+.retrato{
+    max-width:1000px;
+    margin:120px auto 60px auto;
+    display:flex;
+    gap:60px;
+    align-items:center;
+    padding:20px;
+}
+
+/* quadro estilo pintura */
+.quadro{
+    background:linear-gradient(#f4ecd8,#efe4c9);
+    padding:18px;
+    border-radius:6px;
+    box-shadow:0 20px 45px rgba(0,0,0,.6);
+    position:relative;
+    max-width:380px;
+}
+
+.quadro::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(0,0,0,.2);
+    border-radius:6px;
+    pointer-events:none;
+}
+
+.quadro img{
+    width:100%;
+    display:block;
+    border-radius:3px;
+    filter:contrast(1.05) saturate(.95);
+}
+
+/* texto */
+.descricao{
+    max-width:500px;
+}
+
+.descricao h2{
+    font-family:'Cinzel', serif;
+    color:#d4af37;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.descricao p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* responsivo */
+@media(max-width:850px){
+    .retrato{
+        flex-direction:column;
+        text-align:center;
+    }
+}
 
 
 </style>
@@ -163,7 +223,7 @@ body{
     <div class="logo">Site</div>
     <nav class="menu">
         <a href="#">Home</a>s
-        <a href="c:\Users\Rafael\Music\Emilly3DS2026\galeria.html">Galeria</a>
+        <a href="galeria.html">Galeria</a>
         <a href="#">Acadêmico</a>
         <a href="#">Contato</a>
     </nav>
@@ -192,7 +252,21 @@ body{
     </div>
 
 </div>
+<section class="retrato">
 
+    <div class="quadro">
+        <img src="eu.jpg" alt="Foto da artista">
+    </div>
+
+    <div class="descricao">
+        <h2>A Criadora</h2>
+        <p>
+        Não Mencionei antes mas eu sou MALUCA POR DINOSSAUROS e por algum motivo curioso eu decidi cursar DS.Estranho não?
+        Acho que qualquer um tem perfil pra área de T.I não é mesmo?
+        </p>
+    </div>
+
+</section>
 <a href="galeria.html" class="btn">Ver Projetos</a>
 </body>
 </html> 

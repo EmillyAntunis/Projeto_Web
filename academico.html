@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acadêmico</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:radial-gradient(circle at top,#0f1b2e,#070d18 70%);color:#e6dcc6;font-family:'EB Garamond',serif;}
+.navbar{position:fixed;top:0;width:100%;background:rgba(10,15,30,.85);backdrop-filter:blur(6px);padding:15px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,.3);} 
+.logo{font-family:'Cinzel',serif;font-size:22px;letter-spacing:2px;color:#d4af37;}
+.menu a{color:#e6dcc6;text-decoration:none;margin-left:25px;position:relative;}
+.menu a::after{content:"";position:absolute;left:0;bottom:-6px;width:0%;height:1px;background:#d4af37;transition:.3s;}
+.menu a:hover::after{width:100%;}
+.container{max-width:900px;margin:120px auto 40px auto;display:flex;flex-direction:column;gap:50px;padding:40px 20px;}
+.card{background:linear-gradient(#f4ecd8,#efe4c9);color:#2d2a26;padding:35px;border-radius:6px;box-shadow:0 15px 35px rgba(0,0,0,.5);line-height:1.7;}
+.card h2{font-family:'Cinzel',serif;color:#3b2f1b;margin-bottom:15px;}
+.section-title{font-family:'Cinzel',serif;color:#d4af37;font-size:34px;margin-bottom:10px;text-align:center;}
+.lista{padding-left:18px;margin-top:10px;}
+.btn{margin:30px auto;border:1px solid #d4af37;background:transparent;color:#d4af37;cursor:pointer;transition:.3s;padding:12px 24px;text-decoration:none;border-radius:8px;font-weight:bold;display:block;width:fit-content;}
+.btn:hover{background:#d4af37;color:#0f1b2e;}
+</style>
+</head>
+<body>
+<header class="navbar">
+<div class="logo">Site</div>
+<nav class="menu">
+<a href="index.html">Home</a>
+<a href="galeria.html">Galeria</a>
+<a href="academico.html">Acadêmico</a>
+<a href="contato.html">Contato</a>
+</nav>
+</header>
+
+<div class="container">
+<div class="card">
+<h2>Minha jornada acadêmica</h2>
+<p>Em 2023 iniciei estudos complementares de língua inglesa e em 2024 ingressei no ensino técnico. Desde o ensino fundamental mantenho interesse em áreas criativas e tecnológicas,
+ participando de atividades escolares e projetos práticos que despertaram interesse pela produção visual,por exemplo,
+em janeiro de 2024 fiz um pequeno curso de duas semanas onde aprendi técnicas de pinturas e artes manuais diversas enquanto auxiliava em algumas aulas de artes mestradas pela minha mentora e ex professora dona do atêlie.
+A partir dessas experiências comecei a compreender melhor métodos de criação e organização de ideias.</p>
+<p></p>
+</div>
+
+<div class="card">
+<h2>Linha de interesse</h2>
+<ul class="lista">
+<li>Produção visual digital</li>
+<li>Ilustração e concept art</li>
+<li>Estudo de composição e narrativa visual</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Metodologia pessoal</h2>
+<p>Os projetos digitais como sites e aplicações que já fiz seguiram etapas organizadas: pesquisa de referência, geração de esboços, 
+    desenvolvimento, revisão e versão final.
+    Cada trabalho é acompanhado de registros intermediários para avaliação de evolução técnica e compreensão das decisões tomadas durante a execução.</p>
+</div>
+</div>
+
+</body>
+</html>
